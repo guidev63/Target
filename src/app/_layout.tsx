@@ -6,9 +6,9 @@ import {
   Inter_500Medium,
   Inter_700Bold,
 } from '@expo-google-fonts/inter'
-
 import { Loading } from '@/components/Loading'
 import Index from '.'
+
 export default function Layout() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
