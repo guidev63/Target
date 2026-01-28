@@ -6,8 +6,11 @@ import { View, StatusBar } from 'react-native'
 import { router } from 'expo-router'
 
 const summary = {
+
   total: 'R$ 2.680,00',
+
   input: { label: 'Entradas', value: 'R$ 6.184,90' },
+
   output: { label: 'Saídas', value: '-R$ 883,65' },
 }
 
@@ -48,20 +51,23 @@ export default function Index() {
         data={targets}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-        <Target
-         data={item} 
-         onPress={() => router.push(`/in-progress/${item.id}`)} 
-         />
+          <Target
+            data={item}
+            onPress={() => router.push(`/in-progress/${item.id}`)}
+          />
         )}
-        emptyMessage="Nenhuma meta. Toque em Nova meta para criar."
+        emptyMessage="Nenhuma meta. Toque em Nova meta para Criar."
         containerStyle={{ paddingHorizontal: 24 }}
+
       />
 
       <View style={{ padding: 24, paddingBottom: 32 }}>
         <Button title="Nova Meta" onPress={() =>
-         router.push("/target")}
+          router.push("/target")}
+
         />
       </View>
+
     </View>
   )
 }
