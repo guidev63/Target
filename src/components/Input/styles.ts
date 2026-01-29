@@ -20,9 +20,6 @@ export const styles = StyleSheet.create({
         paddingBottom: 12,
         borderBottomWidth: 1,
         borderBottomColor: colors.gray[400],
-
-
-
     },
 
 

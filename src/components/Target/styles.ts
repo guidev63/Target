@@ -3,28 +3,28 @@ import { colors, fontFamily } from "@/theme";
 
 
 export const styles = StyleSheet.create({
-     container:{
-          height:72,
-          width:"100%",
-          flexDirection:"row",
-          alignItems:"center",
+     container: {
+          paddingVertical: 16,
+          width: "100%",
+          flexDirection: "row",
+          alignItems: "center",
           gap: 12,
-          paddingBottom:16,
+          paddingBottom: 16,
 
      },
      content: {
-          flex:1,
-          gap:7,
+          flex: 1,
+          gap: 7,
      },
      name: {
-          fontSize:14,
+          fontSize: 14,
           color: colors.black,
           fontFamily: fontFamily.medium,
 
      },
      status: {
-          fontSize:10,
-           color: colors.gray[500],
-           fontFamily: fontFamily.regular
+          fontSize: 10,
+          color: colors.gray[500],
+          fontFamily: fontFamily.regular
      },
 })

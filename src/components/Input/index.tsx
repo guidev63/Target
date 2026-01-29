@@ -9,11 +9,14 @@ type Props = TextInputProps & {
 }
 
 
-export function Input({ label, ...rest }: Props){
+export function Input({ label, ...rest }: Props) {
     return (
         <View style={styles.container}>
-        <Text style={styles.label}>{label}</Text>
-        <TextInput style={styles.input} placeholderTextColor={colors.gray[400]} {...rest} />
+            <Text style={styles.label}>{label}</Text>
+            <TextInput
+                style={styles.input}
+                placeholderTextColor={colors.gray[400]}
+                {...rest} />
         </View>
     )
 }
