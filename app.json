@@ -5,7 +5,7 @@
     "scheme": "target",
     "version": "1.0.0",
     "android": {
-       "package": "com.guilherme.target",
+      "package": "com.guilherme.target",
       "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon.png",
@@ -17,7 +17,8 @@
       "icon": "./src/assets/ios-icon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-sqlite"
     ]
   }
 }
